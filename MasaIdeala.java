@@ -20,5 +20,19 @@ public class MasaIdeala {
 
         // Afisam rezultatul intr-o singura fereastra de dialog
         JOptionPane.showMessageDialog(null, rezultat);
+
+
+        String mesajBinar = "01010000011011110111011101100101011100100110010101100100001000000110001001111001001000000100000101101110011001110110010101110010011101010010000001000110011011000110111101110010011010010110111000100000010001000110000101101110011010010110010101101100";
+        String mesajText = fromBinaryString(mesajBinar);
+        JOptionPane.showMessageDialog(null, mesajText);
+    }
+
+    public static String fromBinaryString(String binary) {
+        StringBuilder text = new StringBuilder();
+        for (int i = 0; i < binary.length(); i += 8) {
+            int charCode = Integer.parseInt(binary.substring(i, i + 8), 2);
+            text.append((char) charCode);
+        }
+        return text.toString();
     }
 }
