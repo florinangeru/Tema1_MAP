@@ -3,7 +3,7 @@ Tema 1 - Metode avansate de programare
 Angeru Florin-Daniel, grupa 205,
 Informatica, anul 2, ID
 
-CERINTA:
+CERINTA:  
 In pachetul aplicatii, scrieti o sursa Java care calculeaza masa ideala pentru barbati si femei in functie de varsta si inaltimea lor. 
 Citirea datelor de intrare (inaltimea si varsta) se va realiza de la tastatura folosind clasa Scanner.
 
